@@ -19,7 +19,7 @@ func Log(statement string) {
     
     var file string
     var line int
-    var ok bool
+    // var ok bool
     // Caller reports file and line number information about function invocations on the calling goroutine's stack. 
     // The argument skip is the number of stack frames to ascend, with 0 identifying the caller of Caller. 
     _, file, line, _ = runtime.Caller(1)
