@@ -1,7 +1,7 @@
 package tempconv
 
 type Celsius float64
-type Farenheit float64
+type Fahrenheit float64
 
 const (
   BoilingC Celsius = 100
@@ -9,11 +9,11 @@ const (
   AbsoluteC Celsius = -273.15
 )
 
-func CToF(c Celsius) Farenheit {
-  return Farenheit(c*9/5 + 32)
+func CToF(c Celsius) Fahrenheit {
+  return Fahrenheit(c*9/5 + 32)
 }
 
-func FToC(f Farenheit) Celsius {
+func FToC(f Fahrenheit) Celsius {
   return Celsius((f-32) * 5/9)
 }
 
