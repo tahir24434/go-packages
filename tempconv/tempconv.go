@@ -23,4 +23,7 @@ func (c Celsius) String() string {
   return fmt.Sprintf("%g °C", c)
 }
 
+func (f Fahrenheit) String() string {
+  return fmt.Sprintf("%g F", f)
+}
 // For every type T, there is a corrsponding conversion operation T(x) that converts the value x of type T.
