@@ -1,5 +1,7 @@
 package tempconv
 
+import "fmt"
+
 type Celsius float64
 type Fahrenheit float64
 
@@ -15,6 +17,10 @@ func CToF(c Celsius) Fahrenheit {
 
 func FToC(f Fahrenheit) Celsius {
   return Celsius((f-32) * 5/9)
+}
+
+func (c Celsius) String() string {
+  return fmt.Sprintf("%g °C", c)
 }
 
 // For every type T, there is a corrsponding conversion operation T(x) that converts the value x of type T.
